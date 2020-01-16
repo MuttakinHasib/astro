@@ -1,0 +1,194 @@
+// colors
+
+// $color-pink: #ff5b69;
+$color-pink: #f56;
+$color-dark-blue: #7032EF;
+$color-purple: #D308FF;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #faf6f5;
+$color-light-gray: #f8faff;
+$color-dark: #3a444e;
+$color-light-dark: #6e7379;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    letter-spacing: 0.08rem;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    line-height: 1.6;
+}
+
+.text-blue {
+    color: $color-dark-blue !important;
+}
+
+.icon {
+    width: 60px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.btn-outline-contact {
+    padding: 8px 25px;
+    border: 1px solid $color-purple;
+    color: $color-purple !important;
+    border-radius: 40px;
+    transition: all .3s ease;
+
+    &:hover {
+        background: linear-gradient(135deg, $color-dark-blue, $color-purple);
+        color: $color-white !important;
+        border-color: transparent;
+    }
+}
+
+.item-active {
+    background: linear-gradient(135deg, $color-dark-blue, $color-purple);
+    color: $color-white !important;
+
+    p {
+        color: $color-white !important;
+    }
+}
+
+.btn-outline-sweet {
+    padding: 8px 25px;
+    border: 1px solid $color-purple;
+    color: $color-purple !important;
+    border-radius: 40px;
+    transition: all .3s ease;
+
+    &:hover {
+        background: linear-gradient(135deg, $color-dark-blue, $color-purple);
+        color: $color-white !important;
+        border-color: transparent;
+    }
+}
+
+
+
+.btn-sweet {
+    padding: 8px 25px;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, $color-dark-blue, $color-purple);
+    color: $color-white !important;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        // border: 1px solid $color-purple;
+        // color: $color-purple !important;
+        // background: transparent;
+        opacity: .8;
+    }
+}
+
+section {
+    padding: 3.5rem 0;
+}
+
+/* Header Section */
+.header-active {
+    position: fixed;
+    width: 100%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: translateY(70px);
+    transition: transform 500ms ease, background 500ms ease;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+
+    nav {
+        .navbar-brand {
+            color: $color-dark-blue !important;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            line-height: 40px;
+            font-size: 17px !important;
+            color: $color-dark !important;
+            margin-left: .5rem !important;
+            margin-right: .5rem !important;
+        }
+
+        .nav-item:last-child {
+            .nav-link {
+                margin-right: 0 !important;
+            }
+        }
+    }
+}
+
+/* Home Section */
+
+.home {
+    background: url(../img/res_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feature Section */
+
+.features {
+
+    background: $color-light-gray;
+
+    // background: #f4f4f4;
+    .single-item {
+        color: #5a84a2;
+        border-radius: 40px;
+        // box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+        //     -2px -2px 12px rgba(255, 255, 255, .5),
+        //     inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        //     2px 2px 8px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.03);
+        transition: box-shadow 0.5s ease-in-out;
+
+        &:hover {
+            // box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+            //     inset -2px -2px 12px rgba(255, 255, 255, 1),
+            //     inset -2px -2px 4px rgba(255, 255, 255, 1),
+            //     inset -2px -2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
+        }
+    }
+}
