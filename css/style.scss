@@ -170,7 +170,11 @@ header {
 
 .features {
 
+    // background: linear-gradient(rgba($color-light-gray,0.5),rgba($color-light-gray,05)),url(../img/parallax-bg-04.png);
     background: $color-light-gray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     // background: #f4f4f4;
     .single-item {
@@ -189,6 +193,45 @@ header {
             //     inset -2px -2px 4px rgba(255, 255, 255, 1),
             //     inset -2px -2px 8px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
+        }
+    }
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(rgba($color-light-gray, 0.5), rgba($color-light-gray, 05)), url(../img/parallax-bg-04.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.service {
+    background: linear-gradient(rgba($color-light-gray, 0.8), rgba($color-light-gray, 0.8)), url(../img/landing.png);
+    // background: $color-light-gray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .single-item {
+        // background: #fff;
+        color: #5a84a2;
+        border-radius: 40px;
+        // box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+        //     -2px -2px 12px rgba(255, 255, 255, .5),
+        //     inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+        //     2px 2px 8px rgba(0, 0, 0, 0.15);
+        box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
+
+        transition: box-shadow 0.5s ease-in-out;
+
+        &:hover {
+            // box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+            //     inset -2px -2px 12px rgba(255, 255, 255, 1),
+            //     inset -2px -2px 4px rgba(255, 255, 255, 1),
+            //     inset -2px -2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.03);
+
         }
     }
 }

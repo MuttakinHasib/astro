@@ -159,6 +159,9 @@ header nav .nav-item:last-child .nav-link {
 /* Feature Section */
 .features {
   background: #f8faff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .features .single-item {
@@ -175,5 +178,38 @@ header nav .nav-item:last-child .nav-link {
 .features .single-item:hover {
   -webkit-box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
           box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
+}
+
+/* About Section */
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 250, 255, 0.5)), to(#f8faff)), url(../img/parallax-bg-04.png);
+  background: linear-gradient(rgba(248, 250, 255, 0.5), #f8faff), url(../img/parallax-bg-04.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 250, 255, 0.8)), to(rgba(248, 250, 255, 0.8))), url(../img/landing.png);
+  background: linear-gradient(rgba(248, 250, 255, 0.8), rgba(248, 250, 255, 0.8)), url(../img/landing.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service .single-item {
+  color: #5a84a2;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
+          box-shadow: inset 0 0px 38px rgba(0, 0, 0, 0.03);
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.service .single-item:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.03);
 }
 /*# sourceMappingURL=style.css.map */
